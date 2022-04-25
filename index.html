@@ -110,6 +110,12 @@
         .carousel-item{
             width: 100%;
             height: 500px;
+            border-radius: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background: rgba(0, 0, 0, 0.8);
+            background-blend-mode: darken;
+            background-size: cover;
         }
 
         #b{
@@ -117,12 +123,67 @@
             height: 70px;
             border-radius: 50%;
             background-size: cover;
+            background-position: center;
         }
+        .inner-text{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .inner-text h2{
+            font-size: 40px;
+            color: white;
+        }
+
+        .inner-text p{
+            font-size: 20px;
+            color: white;
+            padding: 20px;
+        }
+        .contato{
+        width: 100%;
+        height: 400px;
+    }
+    .form-2 input[type=text],
+    .form-2 input[type=email]{
+        border: 0px;
+        border-radius: 10px;
+        margin-left: 20px;
+        width: 300px;
+        height: 50px;
+    }
+    .form-2 input[type=submit]{
+        border: 0px;
+        border-radius: 10px;
+        margin-left: 20px;
+        width: 250px;
+        height: 50px;
+        background-color: rgb(255, 182, 47);
+    }
+    .rodape{
+        display: flex;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(54, 53, 53));
+        width: 100%;
+        height: 100px;
+    }
+    .logo-2{
+        margin-top: 10px;
+        margin-left: 300px;
+    }
+    .text-rodape{
+        margin-top: 45px;
+        margin-left: 400px;
+    }
     </style>
 
 </head>
 
-<body>
+<body style="background-image: linear-gradient(to top, rgb(192, 192, 192), rgb(234, 234, 234));">
     <header class="container-fluid cabeçalho">
         <div class="container">
             <center>
@@ -285,34 +346,46 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button id="b" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/BG.jpeg);"></button>
+            aria-current="true" aria-label="Slide 1" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/1.png);"></button>
           <button id="b" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/loja.jpeg);"></button>
+            aria-label="Slide 2" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/3.png);"></button>
           <button id="b" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/pack.png);"></button>
+            aria-label="Slide 3" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/4.png);"></button>
             <button id="b" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-            aria-label="Slide 4" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/loja.jpeg);"></button>
+            aria-label="Slide 4" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/2.jpeg);"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" style="background-color: #0ca5e2;">
-            <h1>hellooo</h1>
-            <h1>hellooo</h1>
-            <h1>hellooo</h1>
+          <div class="carousel-item active" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/1.png)">
+            <div class="container inner-text">
+                <h2>Jack Johnson</h2>
+                <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, saepe
+                eum recusandae eligendi at dignissimos eos, nam deserunt nesciunt illo doloremque
+                accusantium repudiandae autem officia! Aliquam quidem voluptatum excepturi "</p>
+            </div>
           </div>
-          <div class="carousel-item" style="background-color: #0ca5e2;">
-            <h1>hellooo</h1>
-            <h1>hellooo</h1>
-            <h1>hellooo</h1>
+          <div class="carousel-item" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/3.png)">
+            <div class="container inner-text">
+                <h2>Lia Mark</h2>
+                <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, saepe
+                eum recusandae eligendi at dignissimos eos, nam deserunt nesciunt illo doloremque
+                accusantium repudiandae autem officia! Aliquam quidem voluptatum excepturi "</p>
+            </div>
           </div>
-          <div class="carousel-item" style="background-color: #0ca5e2;">
-            <h1>hellooo</h1>
-            <h1>hellooo</h1>
-            <h1>hellooo</h1>
+          <div class="carousel-item" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/4.png)">
+            <div class="container inner-text">
+                <h2>Dana Smith</h2>
+                <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, saepe
+                eum recusandae eligendi at dignissimos eos, nam deserunt nesciunt illo doloremque
+                accusantium repudiandae autem officia! Aliquam quidem voluptatum excepturi "</p>
+            </div>
           </div>
-          <div class="carousel-item" style="background-color: #0ca5e2;">
-            <h1>hellooo</h1>
-            <h1>hellooo</h1>
-            <h1>hellooo</h1>
+          <div class="carousel-item" style="background-image: url(/Users/rafaelsilva/Desktop/LandingPage/imagens/2.jpeg)">
+            <div class="container inner-text">
+                <h2>Zac Emerson</h2>
+                <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, saepe
+                eum recusandae eligendi at dignissimos eos, nam deserunt nesciunt illo doloremque
+                accusantium repudiandae autem officia! Aliquam quidem voluptatum excepturi "</p>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -326,6 +399,33 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <div class="contato">
+        <center>
+            <br><br><br><br>
+            <h1>ENTRE EM CONTATO</h1>
+            <br>
+            <h4 style="color: gray;">RECEBA NOSSAS NOVIDADES EM SEU EMAIL</h4>
+            <br><br>
+            <div class="form-2">
+                <form>
+                    <input type="text" placeholder="Seu nome...">
+                    <input type="email" placeholder="Seu email...">
+                    <input type="submit" name="acao" value="ENVIAR">
+                </form>
+            </div>
+        </center>
+    </div>
+
+    <footer class="rodape">
+            <div class="logo-2">
+                <img src="imagens/BB2.png" width="70px">
+            </div>
+            <div class="text-rodape">
+                <h6 style="color: white;">© 2022 - BODY BIG todos os direitos reservados.</h6>
+            </div>
+    </footer>
+
 </body>
 
 </html>
