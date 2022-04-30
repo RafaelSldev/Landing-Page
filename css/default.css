@@ -219,3 +219,19 @@ body {
             rgb(192, 192, 192),
             rgb(234, 234, 234));
 }
+
+.br_1 {
+    height: 19px;
+}
+
+.br_2 {
+    height: calc(19 * 2);
+}
+
+.br_3 {
+    height: calc(19 * 3);
+}
+
+.br_4 {
+    height: calc(19 * 4);
+}
